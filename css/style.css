@@ -1,0 +1,173 @@
+/* Konfigurasi untuk style global */
+:root {
+    /* color */
+    --primaryColor :  #000000;
+    --secondaryColor : #FCE700;
+
+    /* font */
+    --mainFont : 'Poppins', sans-serif; 
+}
+*{
+    box-sizing: border-box !important;
+}
+
+body{
+    font-family: var(--mainFont);
+}
+.heading{
+    font-family: var(--mainFont);
+    font-size: 30px;
+    font-weight: 600;
+}
+.subheading{
+    font-weight: 400;
+}
+
+/* navbar */
+.navbar-brand{
+    font-family: var(--mainFont);
+    font-weight: 900;
+}
+.navbar-brand span{
+    color: var(--secondaryColor);
+}
+.nav-link{
+    font-family: var(--mainFont);
+}
+.nav-link.sgn-signin{
+    border: 1px solid var(--secondaryColor);
+    color: var(--secondaryColor) !important;
+    font-weight: 600;
+}
+.nav-link.lgn-login{
+    background-color: var(--secondaryColor);
+    font-weight: 600;
+    /* color: white !important; */
+}
+.nav-link.active{
+    font-weight: 700;
+    color: var(--secondaryColor) !important;
+}
+.login-signin .lgn-login{
+    background-color: var(--secondaryColor);
+}
+.login-signin .sgn-signin{
+    border: 2px solid var(--secondaryColor);
+    color: var(--secondaryColor);
+}
+
+/* Home */
+.home{
+    background-color: var(--primaryColor);
+    height: 650px;
+    padding-top: 10rem;
+}
+.home .heading{
+    color: var(--secondaryColor);
+}
+.home .price{
+    color: var(--secondaryColor);
+}
+.home .idr{
+    color: var(--secondaryColor);
+}
+.btn-home .btn-buy{
+    background-color: var(--secondaryColor);
+    font-weight: 700;
+}
+.btn-home .btn-learn{
+    border: 2px solid var(--secondaryColor);
+    color: var(--secondaryColor);
+    font-weight: 700;
+}
+/* tampilan responsive di tab */
+@media screen and (min-width: 768px) {
+    .home{
+        padding-top: 14rem;
+    }
+    .home .heading{
+        font-size: 36px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .home .content-left{
+        padding-bottom: 40px;
+    }
+    .home .heading{
+        font-size: 46px;
+    }
+    .home .subheading{
+        font-size: 20px;
+    }
+    .home img{
+        right: 0;
+        bottom: -20;
+        height: 510px;
+    }
+}
+/* .home .docs{
+    width: 560px;
+    height: 392px;
+} */
+
+/* carousel */
+.carousel-inner .carousel-item{
+    height: 800px  !important;
+    width:  800px  !important;
+}
+
+/* shoes */
+.shoes{
+    background-color: var(--primaryColor);
+    height: 750px;
+}
+.shoes .heading{
+    color: var(--secondaryColor);
+}
+.shoes .subheading{
+    color: white;
+}
+.card-body .btn-buy{
+    background-color: var(--secondaryColor);
+    font-weight: 700;
+}
+
+/* Footer */
+.footer{
+    background-color: var(--primaryColor);
+    border-radius: 20px 20px 0px 0px;
+    margin-top: 100px !important;
+}
+.footer .footer-brand{
+    color: white;
+    font-family: var(--mainFont);
+    font-weight: 900;
+}
+.footer .footer-brand span{
+    color: var(--secondaryColor);
+}
+.col1 a{
+    color: var(--secondaryColor);
+}
+.icon-footer i{
+    font-size: 2rem;
+    color: var(--secondaryColor);
+}
+.col2 h3, .col3 h3, .col4 h3, .col5 h3{
+    color: var(--secondaryColor);
+    margin-bottom: 20px;
+    font-family: var(--mainFont);
+    font-weight: 600;
+}
+.col2 ul li, .col3 ul li, .col4 ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.col2 a, .col3 a, .col4 a{
+    color: white;
+}
+.icon-footer2 i{
+    font-size: 2rem;
+    color: var(--secondaryColor);
+}
+
